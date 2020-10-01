@@ -16,18 +16,41 @@
   display: inline-block;
   position: relative;
   border-radius: 30px;
-
 }
 .img {
   width: 10vw;
   height: 20vh;
   border-radius: 30px;
+}
 
+/* responsive */
+@media only screen and (max-width: 800px) {
+  .App {
+    padding-top: 8vh;
+    text-align: center;
+    background-color: gray;
+    width: 100vw !important;
+    height: 100vh;
+  }
+  .small {
+    background-color: lightgray;
+    width: 23vw !important;
+    height: 17vh !important ;
+    margin: 2px !important;
+    display: inline-block;
+    position: relative;
+    border-radius: 30px;
+  }
+  .img {
+    width: 23vw !important;
+    height: 17vh !important;
+    border-radius: 30px;
+  }
 }
 
 /* additional */
 .moves {
-  color:white;
+  color: white;
   background-color: steelblue;
 }
 .container {
@@ -83,7 +106,7 @@ h1 {
   0% {
     opacity: 0;
     transform: scale(1);
-  } 
+  }
   50% {
     opacity: 1;
     transform: scale(1.1);
@@ -118,7 +141,6 @@ h1 {
   }
 }
 
-
 /* Linkedin href */
 a {
   position: fixed;
@@ -140,20 +162,20 @@ a:after {
   height: 2px;
   background: #fff;
   transition: 0.2s;
- }
-  
+}
+
 a:hover {
-    opacity: 0.8;
-}    
+  opacity: 0.8;
+}
 a:hover::after {
-  width: 100%; 
+  width: 100%;
 }
 
 @keyframes slideLeft {
   from {
     opacity: 0;
     transform: translateX(200px);
-  } 
+  }
   to {
     opacity: 1;
     transform: translateX(0%);
